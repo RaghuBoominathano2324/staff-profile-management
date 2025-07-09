@@ -1,0 +1,12 @@
+src/
+├── components/
+│   ├── AddEmployee.jsx
+│   ├── StaffList.jsx
+│   ├── StaffProfile.jsx
+│   ├── NavBar.jsx
+│   └── Help.jsx
+├── assets/
+│   └── EmployeeData.js
+├── App.jsx
+├── main.jsx
+└── index.css
