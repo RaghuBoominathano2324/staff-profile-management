@@ -1,12 +1,58 @@
-# React + Vite
+# 👨‍💼 Staff Profile Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **React-based application** to create, view, and manage employee records. This front-end project uses **React Hooks**, **React Router**, **FontAwesome**, and **LocalStorage** to simulate an HR management system — all without a backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React.js (Hooks, Components)
+- 🌐 React Router v6
+- 💾 Local Storage
+- 🎨 CSS (Responsive layout)
+- ⭐ FontAwesome for Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Features
+
+### 👤 Add Employee
+- Split into two tabs: **Profile** and **Related Info**
+- Avatar photo upload (optional) with preview
+- Form validation + duplicate ID prevention
+- Saves data to browser’s `localStorage`
+- Hooks used:useState,useNavigate,others.
+
+### 📋 View Staff
+- Displays employee table with all data
+- Auto-refresh from local storage
+- Scrollable, mobile-friendly table
+
+### 🧾 Staff Profile
+- Tabbed layout with:
+  - Profile info (name, role, DOB, gender, etc.)
+  - Related info (bank, citizen ID, etc.)
+- Avatar display (if provided)
+
+### 🧭 Navigation
+- `react-router-dom` routes:
+  - `/add`, `/staff`, `/help`, `/admin`
+- NavBar with route buttons & icons
+- Buttons rotate on hover (fun effect)
+
+### ⚙️ Help & Reference
+- Basic usage guide
+- "Contact" and "Privacy" placeholders
+- Return to dashboard or logout
+
+---
+
+## 🔐 Admin Dashboard Login
+
+> Use the following dummy credentials to access the admin dashboard:
+username:raghuboominathan32
+> password:Raghu#53@45
+>
+> To run the project on local Machine after downloading the project  use:npm install,then npm run dev(react-vite based project)
+Author
+RaghuBoominathano2324
