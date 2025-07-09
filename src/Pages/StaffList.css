@@ -1,0 +1,131 @@
+/* === Container that holds the whole table === */
+.staff-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  backdrop-filter: blur(4px);
+}
+
+/* === Title at the top === */
+.staff-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #6366f1;
+  text-shadow: 0 0 8px #8183ff; /* Glowing effect */
+}
+
+/* === The table itself === */
+.staff-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 16px;
+  background: #f0f2ff;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* === Table Header === */
+.staff-table thead th {
+  padding: 18px 26px;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  text-shadow: 0 0 6px #ffffff; /* Glowing effect */
+}
+
+/* === Table Body Rows === */
+.staff-table tbody tr {
+  background: #ffffff;
+  color: #333;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+/* Alternate row colors */
+.staff-table tbody tr:nth-child(even) {
+  background: #f5f7ff;
+}
+
+/* Rounded corners for first and last cells */
+.staff-table tbody tr td:first-child {
+  border-radius: 14px 0 0 14px;
+}
+.staff-table tbody tr td:last-child {
+  border-radius: 0 14px 14px 0;
+}
+
+/* Hover effect */
+.staff-table tbody tr:hover {
+  transform: scale(1.02);
+  box-shadow: 0 14px 34px rgba(99, 102, 241, 0.45);
+}
+
+/* === Table Data Cells === */
+.staff-table td {
+  padding: 18px 26px;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-shadow: 0 0 4px #ccc; /* Soft glow */
+}
+
+/* === Action Buttons in Row === */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+/* === Buttons === */
+button {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  transition: 0.25s;
+  text-shadow: 0 0 5px #fff; /* Glowing text */
+}
+
+/* Button colors */
+.view-btn {
+  background: #0dcaf0;
+}
+.edit-btn {
+  background: #ffc107;
+  color: #222;
+}
+.delete-btn {
+  background: #dc3545;
+}
+
+/* Hover effects */
+.view-btn:hover {
+  background: #11b8dd;
+}
+.edit-btn:hover {
+  background: #e0a800;
+  color: #111;
+}
+.delete-btn:hover {
+  background: #bb2d3b;
+}
+
+/* === When there's no data === */
+.no-data {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  background: #fafafa;
+  border-radius: 14px;
+  text-shadow: 0 0 6px #ccc; /* Glowing */
+}

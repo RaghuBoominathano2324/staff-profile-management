@@ -1,0 +1,156 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  background: white;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Left banner */
+.banner {
+  flex: 1;
+  background: linear-gradient(135deg, #3ab19b, #4cbf91);
+  color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Login form */
+.login-form {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f7f7f7;
+}
+
+.login-form h2 {
+  margin-bottom: 2rem;
+  color: #3aaf9f;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.8rem;
+    border-radius: 23px;
+
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #3aaf9f;
+  background-color: #2a8d81;
+}
+
+.input-group input:focus::placeholder {
+  color: #ccc;
+}
+
+
+button {
+  width: 100%;
+  padding: 1.2rem;
+  background: #3aaf9f;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+button:hover {
+  background: #2a8d81;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  
+  .banner, .login-form {
+    flex: none;
+    padding: 2rem;
+  }
+  
+  .banner {
+    text-align: center;
+  }
+}
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #3aaf9f; /* or your desired color */
+  font-size: 1.4rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem; /* left padding to fit the icon */
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  outline: none;
+}
+

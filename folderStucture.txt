@@ -1,0 +1,66 @@
+Selected profile implementation:-
+src/
+├── pages/
+│   ├── Login.jsx             # Admin login form
+│   ├── StaffForm.jsx         # Create/edit staff
+│   ├── StaffProfile.jsx      # Read-only profile view
+│   └── StaffList.jsx         # List of all added staff (optional)
+├── components/
+│   ├── ProfileTab.jsx        # First half of form fields
+│   └── RelatedInfoTab.jsx    # Second half of form fields
+├── App.jsx                   # Routing logic
+├── auth.js                   # Simple fake auth logic
+└── index.css                 # Tailwind or global CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+src/
+├── pages/                 # top‑level screens
+│   ├── Login.jsx          # admin login form
+│   ├── Dashboard.jsx      # landing page after login
+│   ├── StaffList.jsx      # list / table of all employees
+│   ├── StaffCreate.jsx    # “add new staff” (wraps StaffForm)
+│   └── StaffProfile.jsx   # read‑only view for one employee
+├── components/            # reusable pieces
+│   ├── StaffForm/         # grouped form pieces
+│   │   ├── ProfileTab.jsx
+│   │   └── RelatedInfoTab.jsx
+│   ├── StaffCard.jsx      # small card for list view
+│   ├── Input.jsx          # custom input wrapper
+│   ├── Button.jsx
+│   └── ProtectedRoute.jsx # guards routes after login
+├── contexts/
+│   └── AuthContext.jsx    # keeps auth state (admin token)
+├── hooks/
+│   └── useAuth.js         # helper hook for auth context
+├── App.jsx                # routes + layout shell
+└── index.css              # Tailwind / global styles
